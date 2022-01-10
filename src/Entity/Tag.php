@@ -20,7 +20,7 @@ class Tag
 
     private $tags;
 
-    #[ORM\ManyToMany(targetEntity: project::class, inversedBy: 'tag')]
+    #[ORM\ManyToMany(targetEntity: Project::class, inversedBy: 'tag')]
     private $project;
 
     public function __construct()
