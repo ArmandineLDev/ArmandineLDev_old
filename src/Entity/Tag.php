@@ -18,7 +18,6 @@ class Tag
     #[ORM\Column(type: 'string', length: 30)]
     private $title;
 
-    #[ORM\ManyToMany(targetEntity: Tag::class, mappedBy: 'project_id')]
     private $tags;
 
     #[ORM\ManyToMany(targetEntity: project::class, inversedBy: 'tag')]
