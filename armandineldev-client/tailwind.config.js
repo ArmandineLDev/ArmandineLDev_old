@@ -9,9 +9,17 @@ module.exports = {
       lg: '1024px',
       xl: '1281px'
     },
+
     extend: {
       screens: {
-        '2sm': '512px'
+        '2sm': '512px',
+        '2md': '920px'
+      },
+      container: {
+        'max-width': {
+          '2sm': '512px',
+          '2md': '920px'
+        }
       }
     },
   },
