@@ -5,7 +5,10 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className='main'>
-      <Home />
+      <div className='container mx-auto'>
+<Home />
+      </div>
+      
     </div>
   );
 }

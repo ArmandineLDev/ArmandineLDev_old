@@ -1,12 +1,12 @@
 export const projectDatas = [
     {
         id: 1,
-        title: "Harmonie Intercommunale du Limouxin",
+        title: "Lyre de Limoux",
         about: "La Lyre de Limoux est une association d'environ 80 musiciens bénévoles. Ce site vitrine permet de montrer d'une part pour les visiteurs ce qu'est la Lyre, ses dates, des extraits et d'autre part il est prévu pour les musiciens d'un accès aux partitions, par instrument via une API.",
         // demo: "www.jgrejgnerer",
-        github: 'https://github.com/Armandine337711/lyre',
+        github: '',
         status: 'en cours',
-        image: require('../../assets/lyre_temporaire.png').default,
+        image: require('../assets/images/lyre.png'),
         tag: ['React', 'TailwindCSS']
     },
     {
@@ -15,7 +15,7 @@ export const projectDatas = [
         about: "Percusud est une académie de percussions qui se déroule fin juillet à Limoux depuis 3 ans. Ce site est une ébauche en attendant un entretien plus formel avec l'équipe",
         status: 'en attente',
         github: 'https://github.com/Armandine337711/PercuSud',
-        image: require('../../assets/percusud.png').default,
+        image: require('../assets/images/percusud.png'),
         tag: ["EJS", "NodeJS", "Heroku", "PostgreSQL"]
     },
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { socialData } from '../../datas/social';
+import { socialData } from '../../../datas/social';
 import SocialItem from './SocialItem';
 
 const SocialBar = () => {

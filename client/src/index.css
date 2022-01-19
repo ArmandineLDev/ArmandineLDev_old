@@ -6,4 +6,7 @@
   .main {
     @apply bg-orange-200 text-slate-700;
   }
+  .badge {
+    @apply flex text-white font-medium px-2 py-2 rounded-2xl;
+  }
 }
