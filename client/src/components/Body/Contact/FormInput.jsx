@@ -5,7 +5,7 @@ const FormInput = ({datas}) => {
     <>
     
       <label htmlFor={datas.name} className="h4">
-        {datas.imputLabel} <span className="form-label-star">*</span>
+        {datas.imputLabel} <span className="text-red-500">*</span>
       </label>
       <input
         className=""

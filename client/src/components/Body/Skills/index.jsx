@@ -13,7 +13,7 @@ const Skill = () => {
             return (
               <div className="space-y-2" key={indexSection}>
                 <h3 className="h3">{item.type}</h3>
-                <div className="container flex flex-col 2sm:flex-row 2sm:flew-wrap space-x-4">
+                <div className="container flex flex-col 2sm:flex-row 2sm:flew-wrap space-y-2 2sm:space-y-0 2sm:space-x-4">
                    {item.list.map((skill, indexSkill) => {
                     return <SkillsCard skill={skill} key={indexSkill} />;
                   })}

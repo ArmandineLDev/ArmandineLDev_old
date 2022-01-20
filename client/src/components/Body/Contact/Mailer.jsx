@@ -25,10 +25,10 @@ const Mailer = () => {
     const sendEmail =(e) =>{
         e.preventDefault();
         emailjs.sendForm(
-            'service_27g25ng',
-            'template_4mh0g0y',
+           process.env.SERVICE_MAIL,
+           process.env.TEMPLATE_MAIL,
             e.target,
-            'user_NMBxt5fbchpG91jByjl60'
+            process.env.USER_MAIL
             ).then(response =>{
                 console.log(response);
                 // navigate('/')
@@ -38,18 +38,21 @@ const Mailer = () => {
     return (
         
         <>
-             <form onSubmit={sendEmail} className='space-y-4'>
-                 {
+             <form onSubmit={sendEmail} className=' md:container space-y-4'>
+                 <div className="md:flex flex-wrap mt-4 space-y-4SERV">
+                     {
                       items.map((item, index) =>{
                     
                     return (
-                    <div key={index} className=''>
+                    <div key={index} className='md:basis-1/2'>
                         <FormInput datas={item} />
                     </div>
                     )
                 })}
+                 </div>
+                 
                 <FormTextarea />
-                <button type="submit" className="bg-gray-500 text-red-700 font-bold p-3 rounded">Envoyer</button>
+                <button type="submit" className="bg-slate-500 text-white font-bold p-3 rounded-xl">Envoyer</button>
             </form>
             
         </>
