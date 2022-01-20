@@ -2,7 +2,7 @@ import React from 'react';
 import Separator from '../commons/Separator';
 
 
-const About = () => {
+export const About = () => {
     return (
         <><div>
            <p>Bonjour</p>
@@ -14,4 +14,3 @@ const About = () => {
     )
 }
 
-export default About

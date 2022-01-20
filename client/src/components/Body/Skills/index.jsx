@@ -7,22 +7,23 @@ const Skill = () => {
     const data = SkillsDatas;
   return (
     <>
-        <label className="section-title">Skills</label>
-        <div className="skills-container">
+        <label className="h2">Skills</label>
+        <div className="">
           {data.map((item, indexSection) => {
             return (
-              <div className="skills-section" key={indexSection}>
-                <label className="skills-section-title">{item.type}</label>
-                <div className="skills-section-list">
-                  {item.list.map((skill, indexSkill) => {
+              <div className="space-y-2" key={indexSection}>
+                <h3 className="h3">{item.type}</h3>
+                <div className="container flex flex-col 2sm:flex-row 2sm:flew-wrap space-x-4">
+                   {item.list.map((skill, indexSkill) => {
                     return <SkillsCard skill={skill} key={indexSkill} />;
                   })}
                 </div>
+                 
               </div>
             );
           })}
         </div>
-      )
+      
       <Separator />
     </>
   );

@@ -1,10 +1,10 @@
 import React from 'react'
-import About from './About'
-import Contact from './Contact'
-import Project from './Project'
+import {About} from './About'
+import {Contact} from './Contact'
+import {Project} from './Project'
 import Skills from './Skills'
 
-const Body = () => {
+export const Body = () => {
     return (
         <div>
             <About />
@@ -15,4 +15,4 @@ const Body = () => {
     )
 }
 
-export default Body
+

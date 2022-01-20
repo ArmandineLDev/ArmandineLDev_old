@@ -15,7 +15,7 @@ export const projectDatas = [
         about: "Percusud est une académie de percussions qui se déroule fin juillet à Limoux depuis 3 ans. Ce site est une ébauche en attendant un entretien plus formel avec l'équipe",
         status: 'en attente',
         github: 'https://github.com/Armandine337711/PercuSud',
-        image: require('../assets/images/percusud.png'),
+        image1: require('../assets/images/percusud.png'),
         tag: ["EJS", "NodeJS", "Heroku", "PostgreSQL"]
     },
 
