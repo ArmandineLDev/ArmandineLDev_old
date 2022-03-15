@@ -5,7 +5,8 @@ const Navbar = () => {
     const [items] = useState([
 
         {menu : "A propos",
-        link : "#about",}
+        link : "#about",
+        }
       ,
         {menu : "Projets",
         link : "#project"}

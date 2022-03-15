@@ -7,7 +7,7 @@ const Skill = () => {
     const data = SkillsDatas;
   return (
     <>
-        <label className="h2">Skills</label>
+        <label className="h2" id="skills">Skills</label>
         <div className="">
           {data.map((item, indexSection) => {
             return (

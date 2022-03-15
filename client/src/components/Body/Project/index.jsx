@@ -10,7 +10,7 @@ export const Project = () => {
         <>
         
         <div className='mt-4 space-y-4'>
-            <h2 className='h2'>Projets</h2>
+            <h2 className='h2' id='project'>Projets</h2>
             <>
                 {data.map((project) => {
                     return <ProjectCard project={project} key={project.id} />
