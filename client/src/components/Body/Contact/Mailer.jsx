@@ -25,10 +25,10 @@ const Mailer = () => {
     const sendEmail =(e) =>{
         e.preventDefault();
         emailjs.sendForm(
-           process.env.SERVICE_MAIL,
-           process.env.TEMPLATE_MAIL,
+          'service_27g25ng',
+           'template_6e2vhbo',
             e.target,
-            process.env.USER_MAIL
+            'user_NMBxt5fbchpG91jByjl60'
             ).then(response =>{
                 console.log(response);
                 // navigate('/')
