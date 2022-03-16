@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
             className="project-card-info-photo"
           />}
         </div>
-        <div className="md:w-1/2 space-y-2">
+        <div className="md:w-1/2 space-y-2 pl-3">
           <div className="flex">
             {/* labels github et sits web si les infos existent */}
             {project.demo && (
