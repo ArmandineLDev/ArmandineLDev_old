@@ -9,19 +9,20 @@ const ProjectCard = ({ project }) => {
       </h3>
       <div className="flex flex-col md:flex-row-reverse">
       <div className="md:w-1/2 mb-2">
-          <img
+
+          {project.image && <img
             src={(project.image)?(project.image):(project.image1)}
             alt={project.title}
             className="project-card-info-photo"
-          />
+          />}
         </div>
-        <div className="md:w-1/2 space-y-2">
+        <div className="md:w-1/2 space-y-2 pl-3">
           <div className="flex">
             {/* labels github et sits web si les infos existent */}
             {project.demo && (
               <a className="project-card-info-link" href={project.demo}>
                 <div className="badge bg-orange-900 label-links-tags">
-                  <i class="bi bi-globe"></i>{" "}
+                  <i className="bi bi-globe"></i>{" "}
                   <span className="tag_name">Demo</span>
                 </div>
               </a>
@@ -46,7 +47,9 @@ const ProjectCard = ({ project }) => {
               );
             })}
           </div>
-          <div className="inline-block badge bg-rose-900 uppercase">{project.status}</div>
+          <div className="inline-block badge bg-rose-900 uppercase">
+            {project.status}
+            </div>
         </div>
         
       </div>
