@@ -29,5 +29,15 @@ export const projectDatas = [
         image: require('../assets/images/orizons.png'),
         tag: ['React', 'NodeJS']
     },
+    {
+        id: 4,
+        title: "cine-connect",
+        about: "cine connect est une base de données d'exercice en vue de la gestion de cinémas et des réservations de places.",
+        statut: "terminé",
+        // demo: "https://youtu.be/CSQhjBBMLcw?t=3383",
+        github: 'https://github.com/Armandine337711/cine-connect_Armandine_Barge',
+        // image: require('../assets/images/orizons.png'),
+        tag: ['PostgresSL']
+    },
 
 ]
