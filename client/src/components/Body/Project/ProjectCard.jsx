@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
             {project.demo && (
               <a className="project-card-info-link" href={project.demo}>
                 <div className="badge bg-orange-900 label-links-tags">
-                  <i class="bi bi-globe"></i>{" "}
+                  <i className="bi bi-globe"></i>{" "}
                   <span className="tag_name">Demo</span>
                 </div>
               </a>
@@ -47,7 +47,9 @@ const ProjectCard = ({ project }) => {
               );
             })}
           </div>
-          <div className="inline-block badge bg-rose-900 uppercase">{project.status}</div>
+          <div className="inline-block badge bg-rose-900 uppercase">
+            {project.status}
+            </div>
         </div>
         
       </div>
