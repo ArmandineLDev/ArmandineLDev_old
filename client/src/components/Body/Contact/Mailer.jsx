@@ -39,7 +39,7 @@ const Mailer = () => {
         
         <>
              <form onSubmit={sendEmail} className=' md:container space-y-4'>
-                 <div className="md:flex flex-wrap mt-4 space-y-4SERV">
+                 <div className="md:flex flex-wrap mt-4 space-y-4">
                      {
                       items.map((item, index) =>{
                     
@@ -52,6 +52,11 @@ const Mailer = () => {
                  </div>
                  
                 <FormTextarea />
+                <div className='flex items-center space-x-4'>
+                    <input type="checkbox" name="rgpd" id="rgpd" />
+                <label htmlFor="rgpd">J'autorise ce site à conserver mes données mes données personnelles transmises par ce site. Aucune exploitation commerciale ne sera faite des données ainsi récoltées. Voir les <a href="#">conditions d'utliisation.</a><span className="text-red-500">*</span></label>
+                </div>
+                
                 <button type="submit" className="bg-slate-500 text-white font-bold p-3 rounded-xl">Envoyer</button>
             </form>
             
