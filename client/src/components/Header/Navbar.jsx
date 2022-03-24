@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import NavItem from './NavItem';
 import { itemsDatas } from '../../datas/menu';
 
@@ -6,7 +6,7 @@ const Navbar = () => {
     const items = itemsDatas;
    
     return (
-        <div className="hidden space-x-4 text-sm lg:text-base lg:space-x-8 md:flex font-medium items-center">
+        <>
             {
          items.map((item) => {
            return(
@@ -18,7 +18,7 @@ const Navbar = () => {
            
          })
          }
-        </div>
+        </>
     )
 }
 

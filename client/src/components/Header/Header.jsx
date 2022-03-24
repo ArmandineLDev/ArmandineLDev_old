@@ -1,8 +1,10 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
+import Web from "./Web";
+import Mobile from "./Mobile";
+
 
 const Header = () => {
-  
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="header sticky top-0 bg-orange-200">
       <nav className="flex justify-between lg:px-4 py-4 mx-auto">
@@ -16,6 +18,7 @@ const Header = () => {
             Armandine BARGE
           </h3>
         </div>
+    <Web />
         <div className="flex md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +26,7 @@ const Header = () => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            onClick={console.log("on clique")}
+            onClick={() => setIsOpen(!isOpen)}
           >
             <path
               strokeLinecap="round"
@@ -32,8 +35,9 @@ const Header = () => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
+          {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>
-        <Navbar />
+        
       </nav>
     </div>
   );
