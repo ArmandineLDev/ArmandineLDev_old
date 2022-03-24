@@ -2,7 +2,7 @@ export const projectDatas = [
     {
         id: 1,
         title: "Lyre de Limoux",
-        about: "La Lyre de Limoux est une association d'environ 80 musiciens bénévoles. Ce site vitrine permet de montrer d'une part pour les visiteurs ce qu'est la Lyre, ses dates, des extraits et d'autre part il est prévu pour les musiciens d'un accès aux partitions, par instrument via une API. Actuellement le front-end a été réalisé selon les souhaits du client. Le back-end est en cours de réalisation",
+        about: "La Lyre de Limoux est une association d'environ 80 musiciens bénévoles. Ce site vitrine permet de montrer d'une part pour les visiteurs ce qu'est la Lyre, ses dates, des extraits et d'autre part il est prévu pour les musiciens d'un accès aux partitions, par instrument via une API. Actuellement le front-end a été réalisé selon les souhaits du client. Le back-end est en cours de réalisation. La page d'accueil n'est pour le moment pas responsive",
         demo: "https://lyre-limoux.vercel.app/",
         github: '',
         status: 'en cours',
