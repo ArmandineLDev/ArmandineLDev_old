@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import FormInput from './FormInput';
 import FormTextarea from './FormTextarea';
@@ -26,8 +25,8 @@ const Mailer = () => {
             placeholder:"Saisissez votre email",
         },
     ]);
+    
 
-    // let navigate = useNavigate();
     const sendEmail =(e) =>{
         e.preventDefault();
         emailjs.sendForm(
@@ -37,8 +36,11 @@ const Mailer = () => {
             process.env.REACT_APP_USER
             ).then(response =>{
                 console.log(response);
-                console.log(e)
-                // navigate('/')
+               e.target.firstname.value="";
+               e.target.lastname.value="";
+               e.target.email.value="";
+               e.target.message.value="";
+               e.target.rgpd.value=false;
             }).catch(err=> console.log(err));
        
     }
