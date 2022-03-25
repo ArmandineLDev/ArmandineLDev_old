@@ -54,7 +54,6 @@ const Mailer = () => {
                 <FormTextarea />
                 <div className='flex items-center space-x-4'>
                     <input type="checkbox" name="rgpd" id="rgpd" />
-                    
                 <label htmlFor="rgpd">J'autorise ce site à conserver mes données mes données personnelles transmises par ce site. Aucune exploitation commerciale ne sera faite des données ainsi récoltées. Voir les conditions d\'utliisation.<span className="text-red-500">*</span></label>
                 </div>
                 
