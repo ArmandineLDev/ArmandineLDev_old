@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import FormInput from './FormInput';
 import FormTextarea from './FormTextarea';
@@ -12,6 +11,12 @@ const Mailer = () => {
             type:"text",
             placeholder:"Saisissez votre nom",
         },
+        {
+            imputLabel:"Votre prénom",
+            name:"firstname",
+            type:"text",
+            placeholder:"Saisissez votre nom",
+        },
       
         {
             imputLabel:"Votre courriel",
@@ -20,18 +25,22 @@ const Mailer = () => {
             placeholder:"Saisissez votre email",
         },
     ]);
+    
 
-    // let navigate = useNavigate();
     const sendEmail =(e) =>{
         e.preventDefault();
         emailjs.sendForm(
-          'service_27g25ng',
-           'template_6e2vhbo',
+          process.env.REACT_APP_SERVICE,
+           process.env.REACT_APP_TEMPLATE,
             e.target,
-            'user_NMBxt5fbchpG91jByjl60'
+            process.env.REACT_APP_USER
             ).then(response =>{
                 console.log(response);
-                // navigate('/')
+               e.target.firstname.value="";
+               e.target.lastname.value="";
+               e.target.email.value="";
+               e.target.message.value="";
+               e.target.rgpd.value=false;
             }).catch(err=> console.log(err));
        
     }
@@ -39,7 +48,7 @@ const Mailer = () => {
         
         <>
              <form onSubmit={sendEmail} className=' md:container space-y-4'>
-                 <div className="md:flex flex-wrap mt-4 space-y-4">
+                 <div className="mt-4 space-y-4">
                      {
                       items.map((item, index) =>{
                     
