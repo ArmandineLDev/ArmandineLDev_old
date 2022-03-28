@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
+import FormInput from "./FormInput";
+import FormTextarea from "./FormTextarea";
 
 const Mailer = () => {
-  const { register, handleSubmit, watch } = useForm();
+  const [items] = useState([
+    {
+      imputLabel: "Votre nom",
+      name: "lastname",
+      type: "text",
+      placeholder: "Saisissez votre nom",
+    },
+    {
+      imputLabel: "Votre prénom",
+      name: "firstname",
+      type: "text",
+      placeholder: "Saisissez votre nom",
+    },
 
-  const sendEmail = (e, data) => {
+    {
+      imputLabel: "Votre courriel",
+      name: "email",
+      type: "email",
+      placeholder: "Saisissez votre email",
+    },
+  ]);
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(data);
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE,
@@ -25,77 +45,22 @@ const Mailer = () => {
       })
       .catch((err) => console.log(err));
   };
-  console.log("lastname", watch("lasname"));
   return (
     <>
-      <form
-        onSubmit={handleSubmit(sendEmail)}
-        className=" md:container space-y-4"
-      >
+      <form onSubmit={sendEmail} className=" md:container space-y-4">
         <div className="mt-4 space-y-4">
-          <div className="md:basis-1/2">
-            <label htmlFor="lastname" className="h4">
-              Votre nom&nbsp; <span className="text-red-500">*&nbsp;</span>
-            </label>
-            <input
-              type="text"
-              name="lastname"
-              id="lasname"
-              placeholder="Saisissez votre nom"
-              {...register("lastname", { required: true })}
-            />
-          </div>
+          {items.map((item, index) => {
+            return (
+              <div key={index} className="md:basis-1/2">
+                <FormInput datas={item} />
+              </div>
+            );
+          })}
         </div>
-        <div className="mt-4 space-y-4">
-          <div className="md:basis-1/2">
-            <label htmlFor="firstname" className="h4">
-              Votre prénom&nbsp; <span className="text-red-500">*&nbsp;</span>
-            </label>
-            <input
-              type="text"
-              name="firstname"
-              id="firstname"
-              placeholder="Saisissez votre prénom"
-              {...register("firstname", { required: true })}
-            />
-          </div>
-          <div className="mt-4 space-y-4">
-            <div className="md:basis-1/2">
-              <label htmlFor="email" className="h4">
-                Votre courriel&nbsp;{" "}
-                <span className="text-red-500">*&nbsp;</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Saisissez votre courriel"
-                {...register("email", { required: true })}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="message" className="h4">
-            Votre message <span className="text-red-500">*</span>
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            cols=""
-            rows="10"
-            required
-            placeholder="Saisissez votre message"
-            {...register("message", { required: true })}
-          ></textarea>
-        </div>
+
+        <FormTextarea />
         <div className="flex items-center space-x-4">
-          <input
-            type="checkbox"
-            name="rgpd"
-            id="rgpd"
-            {...register("rgpd", { required: true })}
-          />
+          <input type="checkbox" name="rgpd" id="rgpd" />
           <label htmlFor="rgpd">
             J'autorise ce site à conserver mes données mes données personnelles
             transmises par ce site. Aucune exploitation commerciale ne sera
