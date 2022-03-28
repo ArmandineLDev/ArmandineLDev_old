@@ -2,13 +2,13 @@ export const socialData = [
     {
         id: 1,
         platform: "Github",
-        link: "www.feg",
+        link: "https://github.com/Armandine337711",
         icon: require('../assets/icons/github.png')
     },
     {
         id: 2,
         platform: "Linkedin",
-        link: "www.feg",
+        link: "https://www.linkedin.com/in/armandine-barge/",
         icon: require('../assets/icons/linkedin.png')
     },
     // {
