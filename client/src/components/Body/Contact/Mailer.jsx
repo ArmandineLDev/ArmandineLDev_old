@@ -1,32 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
-import FormInput from "./FormInput";
-import FormTextarea from "./FormTextarea";
 import { useForm } from "react-hook-form";
 
 const Mailer = () => {
-  const [items] = useState([
-    {
-      imputLabel: "Votre nom",
-      name: "lastname",
-      type: "text",
-      placeholder: "Saisissez votre nom",
-    },
-    {
-      imputLabel: "Votre prénom",
-      name: "firstname",
-      type: "text",
-      placeholder: "Saisissez votre nom",
-    },
-
-    {
-      imputLabel: "Votre courriel",
-      name: "email",
-      type: "email",
-      placeholder: "Saisissez votre email",
-    },
-  ]);
-
   const { register, handleSubmit, watch } = useForm();
 
   const sendEmail = (e, data) => {
