@@ -1,0 +1,25 @@
+.header{
+    height: 6.25em;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
+}
+
+.logoTitle{
+    height: 80px;
+    display: flex;
+    font-size: 0.8em;
+
+}
+
+.title{
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+}

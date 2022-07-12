@@ -1,0 +1,14 @@
+.mobile{
+    height: 100vh;
+    width: 33%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 1em;
+    text-align: center;
+    background-color: #fed7aa;
+}
+
+.navbar{
+    margin-top: 1em;
+}

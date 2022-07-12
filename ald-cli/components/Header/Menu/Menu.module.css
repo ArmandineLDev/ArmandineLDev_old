@@ -1,0 +1,11 @@
+.burgerMenu{
+    width: 2em;
+    height: 2em;
+}
+
+@media screen and (min-width: 728px){
+    .burgerMenu{
+        display: none;
+    }
+
+}
