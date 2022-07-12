@@ -2,10 +2,16 @@
     width: 2em;
     height: 2em;
 }
-
-@media screen and (min-width: 728px){
+.webMenu{
+    display: none;
+}
+@media screen and (min-width: 990px){
     .burgerMenu{
         display: none;
+    }
+    .webMenu{
+        display: flex;
+        font-size: 0.8em;
     }
 
 }

@@ -1,6 +1,8 @@
 import classes from "./Menu.module.css"
 import {useState} from "react";
 import Mobile from "./Mobile";
+import Web from "./Web";
+import Navbar from "./Navbar";
 
 const Menu = () =>{
     const [isOpen, setIsOpen] = useState()
@@ -23,6 +25,10 @@ const Menu = () =>{
                 />
             </svg>
             {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
+            <ul className={classes.webMenu}>
+                <Navbar />
+            </ul>
+
         </>
     )
 
