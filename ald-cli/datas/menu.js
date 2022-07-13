@@ -1,13 +1,13 @@
 export const itemsDatas = [
     {
         id: 1,
-        menu: "A propos",
-        link: "#about"
+        menu: "Accueil",
+        link: "/"
     },
     {
         id: 2,
-        menu: "Projets",
-        link: "#project"
+        menu: "Services",
+        link: "/services"
     },
     {
         id: 3,
@@ -15,13 +15,18 @@ export const itemsDatas = [
         link: "#skills"
     },
     {
-        id: 4,
-        menu: "Contactez-moi",
-        link: "#contact"
+      id: 4,
+      menu: "Portfolio",
+      link: "/portfolio"
     },
     {
         id: 5,
-        menu: "Resume",
-        link: "/"
+        menu: "A propos",
+        link: "/a-propos"
+    },
+    {
+        id: 6,
+        menu: "Contactez-moi",
+        link: "/contact"
     }
 ]

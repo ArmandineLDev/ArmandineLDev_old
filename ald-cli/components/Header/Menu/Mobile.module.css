@@ -12,3 +12,9 @@
 .navbar{
     margin-top: 1em;
 }
+
+@media screen and (min-width: 990px){
+    .mobile{
+        display: none;
+    }
+}
