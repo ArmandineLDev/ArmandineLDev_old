@@ -1,3 +1,7 @@
 .navItem{
     margin: 0 0.5em;
 }
+.activeItem{
+    composes: navItem;
+    background-color: chartreuse;
+}

@@ -12,7 +12,7 @@ export const itemsDatas = [
     {
         id: 3,
         menu: "Compétences",
-        link: "#skills"
+        link: "/competences"
     },
     {
       id: 4,

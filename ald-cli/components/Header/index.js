@@ -8,7 +8,7 @@ const Header = () =>{
         <div className={classes.header}>
             <div className={classes.logoTitle}>
                 <Image src={logoImage} width={100}/>
-                <h1 className={classes.title}>Armandine BARGE</h1>
+                <h1 className={classes.title}>Armandine L Dev</h1>
             </div>
             <div>
                 <Menu />

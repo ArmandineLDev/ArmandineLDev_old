@@ -4,15 +4,15 @@ export const SkillsDatas = [
         list: [
             {
                 name: "ReactJS",
-                icon: require("../assets/skills-icons/react_icon.svg").default
+                icon: "react_icon.svg"
             },
             {
                 name: "Javascript",
-                icon: require("../assets/skills-icons/js_icon.svg").default
+                icon: "js_icon.svg"
             },
             {
                 name: "EJS",
-                icon: require("../assets/skills-icons/ejs_icon.svg").default
+                icon: "ejs_icon.svg"
             },
         ]
     },
@@ -21,15 +21,15 @@ export const SkillsDatas = [
         list: [
             {
                 name: "NodeJS",
-                icon: require("../assets/skills-icons/node_icon.svg").default
+                icon: "node_icon.svg"
             },
             {
                 name: "Heroku",
-                icon: require("../assets/skills-icons/heroku_icon.svg").default
+                icon: "heroku_icon.svg"
             },
             {
                 name: "PostgreSQL",
-                icon: require("../assets/skills-icons/postgresql_icon.svg").default
+                icon: "postgresql_icon.svg"
             },
         ]
     }

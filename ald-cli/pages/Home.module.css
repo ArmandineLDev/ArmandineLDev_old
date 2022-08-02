@@ -1,0 +1,50 @@
+.main{
+    margin: 1em;
+}
+.homeSection{
+    display: flex;
+    flex-direction: column;
+    /*border: solid 2px chocolate;*/
+}
+.presentation{
+   margin-top: 1em;
+   margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.identity{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color:#841515;
+    margin: 0;
+}
+.activity{
+    font-size: 1.6em;
+    margin: 0;
+    font-style: italic;
+}
+
+.servicesList{
+    margin: 0.5em 2em;
+    list-style-type: square;
+    font-style: italic;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 990px){
+    .homeSection{
+        flex-direction: row;
+    }
+    .image, .presentation{
+        width: 50%;
+    }
+}
