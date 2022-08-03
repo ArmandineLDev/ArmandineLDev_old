@@ -6,7 +6,7 @@ export const projectDatas = [
         demo: "https://lyre-limoux.vercel.app/",
         github: '',
         status: 'en cours',
-        image: require('../assets/images/lyre.png'),
+        image: '../assets/images/lyre.png',
         tag: ['React', 'TailwindCSS']
     },
     {
@@ -15,7 +15,7 @@ export const projectDatas = [
         about: "Percusud est une académie de percussions qui se déroule fin juillet à Limoux depuis 3 ans. Ce site est une ébauche en attendant un entretien plus formel avec l'équipe",
         status: 'en attente',
         github: 'https://github.com/Armandine337711/PercuSud',
-        image: require('../assets/images/percusud.png'),
+        image: 'percusud.png',
         tag: ["EJS", "NodeJS", "Heroku", "PostgreSQL"]
     },
 
@@ -26,7 +26,7 @@ export const projectDatas = [
         status: "En cours",
         demo: "https://youtu.be/CSQhjBBMLcw?t=3383",
         github: 'https://github.com/Armandine337711/orizons',
-        image: require('../assets/images/orizons.png'),
+        image: 'orizons.png',
         tag: ['React', 'NodeJS']
     },
     {
@@ -34,9 +34,7 @@ export const projectDatas = [
         title: "cine-connect",
         about: "cine connect est une base de données d'exercice en vue de la gestion de cinémas et des réservations de places.",
         status: "terminé",
-        // demo: "https://youtu.be/CSQhjBBMLcw?t=3383",
         github: 'https://github.com/Armandine337711/cine-connect_Armandine_Barge',
-        // image: require('../assets/images/orizons.png'),
         tag: ['PostgresSL']
     },
 

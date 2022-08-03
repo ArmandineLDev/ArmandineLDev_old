@@ -10,11 +10,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex flex-col md:flex-row-reverse">
       <div className="md:w-1/2 mb-2">
 
-          {project.image && <img
-            src={(project.image)?(project.image):(project.image1)}
-            alt={project.title}
-            className="project-card-info-photo"
-          />}
+
         </div>
         <div className="md:w-1/2 space-y-2 pl-3">
           <div className="flex">
