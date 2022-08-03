@@ -1,28 +1,28 @@
-import {SkillsDatas} from "../../datas/skills"
+import Header from "../../components/Header"
+
+import CompetencesCss from './Competences.module.css'
+import { SkillsDatas } from "../../datas/skills"
+import SkillsCard from "./SkillsCard"
+
 const CompetencesPage = () => {
     return (
-        <div>
+        <>
+            <Header />
             <h2>this is competences page</h2>
-            {console.log(SkillsDatas)}
-            {SkillsDatas.map((item, indexSection)=>{
-                console.log('item', indexSection)
-                return(
+            {SkillsDatas.map((item, indexSection) => {
+                return (
 
-<>
+                    <>
 
                         <h3 key={indexSection}>{item.type}</h3>
-                        {console.log(item.list.map)}
 
-                        <div>{item.list.map((skill, indexSkill)=>{
-                            console.log('skill', indexSkill)
-                            return(<div><p key={indexSkill}>{skill.name}</p>
-                                <p>{skill.icon}</p>
-                                <img src={`../../public/pictures/skills-icons/${skill.icon}`} alt={'truc'}/></div>)
+                        <div className={CompetencesCss.skill}>{item.list.map((skill, indexSkill) => {
+                            return (<SkillsCard skill={skill} key={indexSkill} />)
                         })}</div>
-            </>
+                    </>
                 )
             })}
-        </div>
+        </>
     )
 }
 export default CompetencesPage;
