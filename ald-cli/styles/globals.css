@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0 5em;
-  background-color: #fed7aa ;
-  font-family: "Open Sans", "Lato", sans-serif;
-  color: #334155;
+  background-color: #eddcdc;
+  font-family: 'Poppins', sans-serif;
 
+  max-width: 1120px;
+ margin: auto;
+  }
+
+body, button{
+  color: #334155;
 }
 
 h1,
@@ -18,7 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 p,
@@ -28,6 +33,12 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h2{
+  font-size: 1.4em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 
 a {
@@ -47,12 +58,14 @@ ul {
 
 @media screen and (min-width: 512px){
   body{
-    font-size: 18px
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1120px){
   body{
-    font-size: 20px
+
+    font-size: 20px;
+
   }
 }

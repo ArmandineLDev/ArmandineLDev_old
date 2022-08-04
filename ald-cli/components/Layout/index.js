@@ -1,10 +1,14 @@
 import Header from "../Header";
 
+import classes from './Layout.module.css';
+import Footer from "../Footer";
+
 const Layout = ({children}) =>{
     return(
         <>
         <Header />
-            <main>{children}</main>
+            <main className={classes.main}>{children}</main>
+            <Footer />
         </>
     )
 }

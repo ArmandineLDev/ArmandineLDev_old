@@ -1,6 +1,4 @@
-.section{
-    margin: 1em;
-}
+
 .homeSection{
     display: flex;
     flex-direction: column;
@@ -12,18 +10,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.2em;
 }
 
 .identity{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bolder;
     color:#841515;
     margin: 0;
 }
 .activity{
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 0;
     font-style: italic;
+}
+
+.imageStyle{
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+
+    box-shadow: 10px 5px 5px red;
+}
+
+.image{
+    box-shadow: 10px 5px 5px red;
+    border: solid 2px green;
 }
 
 .servicesList{
@@ -36,6 +47,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.needs{
+    margin-top: 2em;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.allCards{
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.card{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 2.5em;
+    width: 25%;
+    /*border: solid 1px #841515;*/
+    border: 0.5em ridge rgba(132, 21, 21, .6);
+    border-radius: 1.3em;
+}
+
+.accessServices{
+    border: 0.2em solid rgba(132, 21, 21, .6);
+    border-radius: 1.3em;
+    font-size: 1.4em;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.accessServices:hover{
+    background-color: rgb(132, 31, 31);
+    color: white;
+    border-color: #334115;
+    cursor: grab;
+}
+
+.accessPlace{
+   text-align: center;
 }
 
 
