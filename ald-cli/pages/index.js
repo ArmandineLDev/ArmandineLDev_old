@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Image from "next/image";
 import homeCss from "./Home.module.css"
 
@@ -6,9 +5,8 @@ import codingImage from "../public/pictures/coding.jpg"
 
 const HomePage = () => {
     return (
-        <div>
-            <Header />
-            <main className={homeCss.main}>
+        <>
+            <section className={homeCss.section}>
                 <article className={homeCss.homeSection}>
                     <div className={homeCss.presentation}>
                         <p>Hello, je suis</p>
@@ -30,8 +28,8 @@ const HomePage = () => {
 
 
                 </article>
-            </main>
-        </div>
+            </section>
+        </>
     )
 
 }

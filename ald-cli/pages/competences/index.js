@@ -1,5 +1,3 @@
-import Header from "../../components/Header"
-
 import CompetencesCss from './Competences.module.css'
 import { SkillsDatas } from "../../datas/skills"
 import SkillsCard from "./SkillsCard"
@@ -7,7 +5,6 @@ import SkillsCard from "./SkillsCard"
 const CompetencesPage = () => {
     return (
         <>
-            <Header />
             <h2>this is competences page</h2>
             {SkillsDatas.map((item, indexSection) => {
                 return (

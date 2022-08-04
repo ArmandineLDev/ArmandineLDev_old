@@ -1,11 +1,9 @@
 //import servicesCss from "./Services.modules.css";
 
-import Header from "../../components/Header";
 
 const ServicesPage = () =>{
     return (
         <>
-            <Header />
             <h2>Mes services</h2>
             <ul>
                 <li>Création de sites internet standard : sites vitrines, blog, site e-commerce, site évènementiels</li>
