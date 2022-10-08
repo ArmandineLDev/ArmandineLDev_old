@@ -28,13 +28,13 @@
 .imageStyle{
     border-top-left-radius: 1.2em;
     border-top-right-radius: 1.2em;
-
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 0.7em 0.7em 1.4em #334155;
+    width: 100%;
 }
 
 .image{
-    box-shadow: 10px 5px 5px red;
-    border: solid 2px green;
+  /*  box-shadow: 10px 5px 5px red;*/
+
 }
 
 .servicesList{

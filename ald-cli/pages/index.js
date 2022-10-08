@@ -15,8 +15,10 @@ const HomePage = () => {
                         <h2 className={homeCss.identity}>Armandine BARGE</h2>
                         <h3 className={homeCss.activity}>Développeuse web et d'applications indépendante</h3>
                     </div>
-                    <div className={homeCss.image}><Image src={codingImage} className={homeCss.imageStyle}/></div>
-
+                    <div className={homeCss.image}>
+                        <img src={"/pictures/coding.jpg"} className={homeCss.imageStyle}/>
+                        {/*<Image src={codingImage} className={homeCss.imageStyle}/>*/}
+                    </div>
                 </article>
 
                 <article>

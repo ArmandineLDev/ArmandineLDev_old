@@ -1,0 +1,5 @@
+.card li{
+    text-align: start;
+    list-style-image: url("/pictures/icons/arrow.svg");
+    padding: 0.2em;
+}

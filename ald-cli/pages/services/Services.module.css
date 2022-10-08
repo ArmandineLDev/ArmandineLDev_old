@@ -1,0 +1,14 @@
+/*.cardBox{
+    display: flex;
+}*/
+
+.serviceCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.otherServices{
+    display: flex;
+    flex-direction: column;
+}

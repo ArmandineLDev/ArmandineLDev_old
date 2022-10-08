@@ -50,6 +50,7 @@ ul {
   list-style: none;
 }
 
+
 @media screen and (max-width: 511px){
   body{
     font-size: 14px;
