@@ -1,28 +1,28 @@
-.card{
-    text-align: center;
-
-    margin: 1em;
-    margin-bottom: 2.5em;
-    max-width: 100%;
-    min-height: 8em;
-    /*border: solid 1px #841515;*/
-    border: 0.5em ridge rgba(132, 21, 21, .6);
-    border-radius: 1.3em;
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
+.card {
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 2.5em;
+  max-width: 100%;
+  min-height: 8em;
+  /*border: solid 1px #841515;*/
+  border: 0.5em ridge rgba(132, 21, 21, 0.6);
+  border-radius: 1.3em;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
 }
 
-@media screen and (min-width: 511px){
-    .card{
-        padding: 1em;
-        max-width: 40%;
-        font-size: 1em;
-    }
+@media screen and (min-width: 511px) {
+  .card {
+    padding: 1em;
+    max-width: 40%;
+    font-size: 1em;
+  }
 }
 
-@media screen and (min-width: 990px){
-    .card{
-        max-width: 25%;
-    }
+@media screen and (min-width: 990px) {
+  .card {
+    max-width: 25%;
+  }
 }
